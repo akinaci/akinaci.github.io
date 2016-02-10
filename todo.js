@@ -13,8 +13,8 @@ function addItem() {
 
 }
 
-function deleteItem(event) {
+function deleteItem() {
   console.info(event);
-  $("link-delete").remove("<li>" + text + " " + delete_link + "</li>");
-  $(event.target).parent().fadeOut();
+  $(event.target).remove("<li>" + text + " " + delete_link + "</li>");
+  $(event.target).parent().fadeOut("<li>" + text + " " + delete_link + "</li>");
 }
