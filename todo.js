@@ -15,6 +15,6 @@ function addItem() {
 
 function deleteItem(event) {
   console.info(event);
-  $(event.target).remove();
+  $("link-delete").remove("<li>" + text + " " + delete_link + "</li>");
   $(event.target).parent().fadeOut();
 }
